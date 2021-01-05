@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserProfile">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView4"
+        android:layout_width="327dp"
+        android:layout_height="251dp"
+        app:cardBackgroundColor="@color/colorAccent"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.121">
+
+        <ImageView
+            android:id="@+id/imageView14"
+            android:layout_width="81dp"
+            android:layout_height="73dp"
+            android:layout_marginStart="120dp"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="246dp"
+            android:layout_marginRight="46dp"
+
+            app:srcCompat="@drawable/profileicon"
+            tools:srcCompat="@drawable/profileicon" />
+
+        <TextView
+            android:id="@+id/emailAdd"
+            android:layout_width="214dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="85dp"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="165dp"
+            android:layout_marginEnd="246dp"
+            android:layout_marginRight="46dp"
+            android:fontFamily="@font/alegreya_bold"
+            android:text="Email"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/fName"
+            android:layout_width="178dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="125dp"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="135dp"
+            android:layout_marginEnd="246dp"
+            android:layout_marginRight="46dp"
+            android:fontFamily="@font/alegreya_bold"
+            android:text="USER"
+            android:textSize="18dp" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView5"
+        android:layout_width="95dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="30dp"
+        app:cardCornerRadius="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.251"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView4">
+
+        <ImageView
+            android:id="@+id/locationIcon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/locationicon" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="94dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="30dp"
+        app:cardCornerRadius="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.622"
+        app:layout_constraintStart_toEndOf="@+id/cardView5"
+        app:layout_constraintTop_toBottomOf="@+id/cardView4" >
+
+        <ImageView
+            android:id="@+id/imageView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/homlogo" />
+    </androidx.cardview.widget.CardView>
+
+    <ImageButton
+        android:id="@+id/list"
+        android:layout_width="47dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/login"
+        app:layout_constraintStart_toEndOf="@+id/home"
+        app:srcCompat="@drawable/ic_baseline_format_list_bulleted_24" />
+
+    <ImageButton
+        android:id="@+id/home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_baseline_home_24" />
+
+    <ImageButton
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_baseline_person_24" />
+
+    <Button
+        android:id="@+id/button"
+        style="@android:style/Widget.Material.Light.Button.Toggle"
+        android:layout_width="332dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="40dp"
+        android:background="@color/colorAccent"
+        android:onClick="logout"
+        android:text="SignOut"
+        app:layout_constraintBottom_toTopOf="@+id/list"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.531"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/abhaya_libre_semibold"
+        android:text="Locate Us"
+        android:textSize="19dp"
+        app:layout_constraintEnd_toEndOf="@+id/cardView5"
+        app:layout_constraintStart_toStartOf="@+id/cardView5"
+        app:layout_constraintTop_toBottomOf="@+id/cardView5" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
